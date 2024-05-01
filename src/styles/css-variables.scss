@@ -1,0 +1,27 @@
+:root {
+  // colours
+  --primary-color-1: #2500ff;
+  --primary-color-2: #1d1d1d;
+  --primary-color-3: #ffffff;
+  --primary-color-4: #d4dbdd;
+
+  --secondary-color-1: #7f8889;
+  --secondary-color-2: #f4ff84;
+  --secondary-color-3: #e7ff00;
+
+  --supporting-color-1: #d5f5eb;
+  --supporting-color-2: #89eebf;
+  --supporting-color-3: #e6dfc9;
+  --supporting-color-4: #d2c5ae;
+  --supporting-color-5: #fff0ea;
+  --supporting-color-6: #ffe3d9;
+
+  // font
+  --line-height-1: 0.8;
+  --line-height-2: 1;
+  --line-height-3: 1.1;
+  --line-height-4: 1.25;
+  --line-height-5: 1.4;
+
+  --line-height-reading: var(--line-height-4);
+}

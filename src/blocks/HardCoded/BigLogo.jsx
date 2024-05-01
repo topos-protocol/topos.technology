@@ -1,0 +1,30 @@
+import React from "react";
+import styled from "@emotion/styled";
+
+const Wrapper = styled.div`
+  padding: 0 0 0 0;
+  svg {
+    display: block;
+  }
+`;
+
+export default function BigLogo({ section }) {
+  return (
+    <Wrapper>
+      <svg
+        width="708"
+        height="461"
+        viewBox="0 0 708 461"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M0.00352092 0L0 42.1677L248.573 42.8093L248.57 73.693H248.573V85.6256H0.00352092V127.79H248.573V169.958H236.665H213.783H0V212.129H213.783H236.662H248.573L248.57 461H290.69V212.129H302.602H333.079V461H375.192V212.129H405.398H417.313L417.306 461H459.427L459.434 212.129H708V169.958H459.434V127.79H708V85.6256H459.434V43.3557L471.338 43.3874V43.4509H497.646L505.301 43.472V43.4509H708V1.28668H497.646L0.00352092 0ZM290.69 73.693V43.4755V42.9186L302.602 42.9468V43.4509H333.079V55.3694V85.6256H321.47H302.605H290.69V73.693ZM375.192 55.4011V43.4509H405.398V43.2147L417.313 43.2429V73.693V85.6256H375.192V55.4011ZM375.192 158.014V127.79H417.313V169.958H405.398H375.192V158.014ZM290.69 127.79H302.598H321.47H333.079V158.014V169.958H302.605H290.69V127.79Z"
+          fill={section?.textColor?.value || "var(--primary-color-3)"}
+        />
+      </svg>
+    </Wrapper>
+  );
+}
