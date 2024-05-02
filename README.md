@@ -1,3 +1,5 @@
+[![Deploy topos.technology Gatsby site to GitHub Pages](https://github.com/topos-protocol/topos.technology/actions/workflows/deploy.yml/badge.svg)](https://github.com/topos-protocol/topos.technology/actions/workflows/deploy.yml)
+
 <h1 align="center">
   Toposware Website (Gatsby)
 </h1>
