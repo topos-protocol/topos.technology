@@ -26,6 +26,15 @@ const Wrapper = styled.div`
   p {
     margin-bottom: 1rem;
   }
+
+  div {
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .darkenBackground {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
 `;
 
 // it can edit in
@@ -40,12 +49,14 @@ export default function BlockText({ block, section }) {
     opacity: [0, 4],
   });
 
+  const klass = block.darkenBackground ? 'darkenBackground' : block.darkenBackground;;
+
   return (
     <Wrapper>
-      <div ref={firstColumnRef.ref}>
+      <div ref={firstColumnRef.ref} class={klass}>
         <RichText element={block.firstColumn} />
       </div>
-      <div ref={secondColumnRef.ref}>
+      <div ref={secondColumnRef.ref} class={klass}>
         <RichText element={block.secondColumn} />
       </div>
     </Wrapper>

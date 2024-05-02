@@ -18,6 +18,12 @@ const HeroWrapper = styled.div`
   @media (max-width: 480px) {
     padding: 7.5rem 0px 4.5rem 0px;
   }
+
+  span.darkenBackground div {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.375rem;
+    border-radius: 0.5em;
+  }
 `;
 
 const Supertitle = styled.div`
@@ -89,13 +95,16 @@ export default function BlockHero({ block, section }) {
     opacity: [-1.5, 10],
   });
 
+  // const klass = block.darkenBackground ? 'darkenBackground' : block.darkenBackground;;
+  const klass = true ? 'darkenBackground' : block.darkenBackground;;
+
   return (
     <HeroWrapper>
       <span ref={heroSupertitleRef.ref}>
         {block.supertitle && <Supertitle>{block.supertitle}</Supertitle>}
       </span>
 
-      <span ref={heroTitleRef.ref}>
+      <span ref={heroTitleRef.ref} class={klass}>
         {block.heroTitle && (
           <HeroTitle>
             <RichText element={block.heroTitle} />
@@ -103,7 +112,7 @@ export default function BlockHero({ block, section }) {
         )}
       </span>
 
-      <span ref={heroTextRef.ref}>
+      <span ref={heroTextRef.ref} class={klass}>
         {block.heroText && (
           <HeroText>
             <RichText element={block.heroText} />
