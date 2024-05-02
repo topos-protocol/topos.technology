@@ -20,7 +20,7 @@ const HeroWrapper = styled.div`
   }
 
   span.darkenBackground div {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
     padding: 0.375rem;
     border-radius: 0.5em;
   }
@@ -34,7 +34,7 @@ const Supertitle = styled.div`
 
 const HeroTitle = styled.div`
   h1 {
-    font-size: clamp(3.8rem, 8vw, 7.6rem);
+    font-size: clamp(3.8rem, 8vw, 7.5rem);
     letter-spacing: -3px;
     line-height: var(--line-height-1);
     font-weight: 700;
@@ -99,7 +99,7 @@ export default function BlockHero({ block, section }) {
 
   return (
     <HeroWrapper>
-      <span ref={heroSupertitleRef.ref}>
+      <span ref={heroSupertitleRef.ref} class={klass}>
         {block.supertitle && <Supertitle>{block.supertitle}</Supertitle>}
       </span>
 
