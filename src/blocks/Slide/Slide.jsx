@@ -5,6 +5,7 @@ import Image from "../../elements/BackgroundImg.jsx";
 
 const Wrapper = styled.div`
   position: relative;
+  min-width: 125vw;
   min-height: 100vh;
   max-height: 800px;
   display: flex;
