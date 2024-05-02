@@ -130,6 +130,7 @@ export default function BlockHero({ block, section }) {
                 text={button.buttonText}
                 color={sectionTextColor}
                 hoverColor={sectionBackgroundColor}
+                darkenBackground={block.darkenBackground}
               ></Button>
             ))}
           </ButtonSection>

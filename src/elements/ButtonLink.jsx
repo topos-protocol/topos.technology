@@ -12,7 +12,7 @@ const ButtonBase = styled.div`
   display: inline-block;
 `;
 
-export default function Button({ link, text, color, hoverColor }) {
+export default function Button({ link, text, color, hoverColor, darkenBackground }) {
   const TheButton = styled(ButtonBase)`
     border: 1px ${color} solid;
     color: ${color};
@@ -20,7 +20,9 @@ export default function Button({ link, text, color, hoverColor }) {
     overflow: hidden;
     transition: all 0.2 ease delay 0.5s;
     margin-right: 0.5rem;
+    ${ darkenBackground && "background-color: rgba(0, 0, 0, 0.5);"}
     &:hover {
+      ${ darkenBackground && "background-color: rgba(0, 0, 0, 0.0);"}
       color: ${hoverColor || "var(--current-section-background-color, #000)"};
       &::before {
         -webkit-transform: scale(12);
