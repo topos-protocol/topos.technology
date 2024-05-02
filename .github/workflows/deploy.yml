@@ -64,6 +64,7 @@ jobs:
           TOPOS_CONTENTFUL_ACCESS_TOKEN: ${{ secrets.TOPOS_CONTENTFUL_ACCESS_TOKEN }}
           TOPOS_CONTENTFUL_SPACE_ID: ${{ vars.TOPOS_CONTENTFUL_SPACE_ID }}
           WEBSITE_SETTING_ENTRY_ID: ${{ vars.WEBSITE_SETTING_ENTRY_ID }}
+          TOPOS_GA_TRACKING_ID: ${{ vars.TOPOS_GA_TRACKING_ID }}
         run: npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
