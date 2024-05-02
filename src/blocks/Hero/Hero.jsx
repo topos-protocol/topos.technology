@@ -95,8 +95,7 @@ export default function BlockHero({ block, section }) {
     opacity: [-1.5, 10],
   });
 
-  // const klass = block.darkenBackground ? 'darkenBackground' : block.darkenBackground;;
-  const klass = true ? 'darkenBackground' : block.darkenBackground;;
+  const klass = block.darkenBackground ? 'darkenBackground' : block.darkenBackground;;
 
   return (
     <HeroWrapper>
