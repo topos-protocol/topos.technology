@@ -67,7 +67,7 @@ jobs:
           TOPOS_GA_TRACKING_ID: ${{ vars.TOPOS_GA_TRACKING_ID }}
         run: npm run build
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
 
