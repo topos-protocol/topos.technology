@@ -3,7 +3,7 @@ import RichText from "../../elements/RichText.jsx";
 import styled from "@emotion/styled";
 
 const Wrapper = styled.div`
-  padding: 240px 80px 80px 80px;
+  padding: 80px 16px 80px 16px;
   background-color: ${(props) => props.sectionBackgroundColor};
   width: 500px;
 
@@ -26,8 +26,11 @@ const Wrapper = styled.div`
     font-size: 1.125rem;
     line-height: var(--line-height-4);
   }
+  @media (max-width: 1296px) {
+    width: 38vw;
+  }
 
-  @media (max-width: 480px) {
+  @media (max-width: 768px) {
     width: 90vw;
   }
 `;
